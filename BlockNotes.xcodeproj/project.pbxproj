@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7C75DAAC21008DE80098CC4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DAAB21008DE80098CC4F /* AppDelegate.swift */; };
-		7C75DAAE21008DE80098CC4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DAAD21008DE80098CC4F /* ViewController.swift */; };
 		7C75DAB121008DE80098CC4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C75DAAF21008DE80098CC4F /* Main.storyboard */; };
 		7C75DAB321008DEB0098CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C75DAB221008DEB0098CC4F /* Assets.xcassets */; };
 		7C75DAB621008DEB0098CC4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C75DAB421008DEB0098CC4F /* LaunchScreen.storyboard */; };
 		7C75DAC121008DEB0098CC4F /* BlockNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DAC021008DEB0098CC4F /* BlockNotesTests.swift */; };
+		7C75DACC2100BEFA0098CC4F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DACB2100BEFA0098CC4F /* Note.swift */; };
+		7C75DACE2100C1650098CC4F /* BlockNotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DACD2100C1650098CC4F /* BlockNotesModel.swift */; };
+		7C75DAD02100C38D0098CC4F /* BlockNotesNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DACF2100C38D0098CC4F /* BlockNotesNetworking.swift */; };
+		7C75DAD22100C57C0098CC4F /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DAD12100C57C0098CC4F /* StartViewController.swift */; };
+		7C75DAD42100D4DE0098CC4F /* BlockNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DAD32100D4DE0098CC4F /* BlockNotesTableViewCell.swift */; };
+		7C75DAD62100D7660098CC4F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DAD52100D7660098CC4F /* MainViewController.swift */; };
+		7C75DAD82100D78B0098CC4F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DAD72100D78B0098CC4F /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +34,6 @@
 /* Begin PBXFileReference section */
 		7C75DAA821008DE80098CC4F /* BlockNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C75DAAB21008DE80098CC4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C75DAAD21008DE80098CC4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C75DAB021008DE80098CC4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C75DAB221008DEB0098CC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C75DAB521008DEB0098CC4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +41,13 @@
 		7C75DABC21008DEB0098CC4F /* BlockNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C75DAC021008DEB0098CC4F /* BlockNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNotesTests.swift; sourceTree = "<group>"; };
 		7C75DAC221008DEB0098CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C75DACB2100BEFA0098CC4F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		7C75DACD2100C1650098CC4F /* BlockNotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNotesModel.swift; sourceTree = "<group>"; };
+		7C75DACF2100C38D0098CC4F /* BlockNotesNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNotesNetworking.swift; sourceTree = "<group>"; };
+		7C75DAD12100C57C0098CC4F /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		7C75DAD32100D4DE0098CC4F /* BlockNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNotesTableViewCell.swift; sourceTree = "<group>"; };
+		7C75DAD52100D7660098CC4F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7C75DAD72100D78B0098CC4F /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +90,13 @@
 			isa = PBXGroup;
 			children = (
 				7C75DAAB21008DE80098CC4F /* AppDelegate.swift */,
-				7C75DAAD21008DE80098CC4F /* ViewController.swift */,
+				7C75DACB2100BEFA0098CC4F /* Note.swift */,
+				7C75DACD2100C1650098CC4F /* BlockNotesModel.swift */,
+				7C75DACF2100C38D0098CC4F /* BlockNotesNetworking.swift */,
+				7C75DAD32100D4DE0098CC4F /* BlockNotesTableViewCell.swift */,
+				7C75DAD12100C57C0098CC4F /* StartViewController.swift */,
+				7C75DAD52100D7660098CC4F /* MainViewController.swift */,
+				7C75DAD72100D78B0098CC4F /* EditViewController.swift */,
 				7C75DAAF21008DE80098CC4F /* Main.storyboard */,
 				7C75DAB221008DEB0098CC4F /* Assets.xcassets */,
 				7C75DAB421008DEB0098CC4F /* LaunchScreen.storyboard */,
@@ -197,8 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C75DAAE21008DE80098CC4F /* ViewController.swift in Sources */,
+				7C75DACE2100C1650098CC4F /* BlockNotesModel.swift in Sources */,
 				7C75DAAC21008DE80098CC4F /* AppDelegate.swift in Sources */,
+				7C75DACC2100BEFA0098CC4F /* Note.swift in Sources */,
+				7C75DAD02100C38D0098CC4F /* BlockNotesNetworking.swift in Sources */,
+				7C75DAD22100C57C0098CC4F /* StartViewController.swift in Sources */,
+				7C75DAD42100D4DE0098CC4F /* BlockNotesTableViewCell.swift in Sources */,
+				7C75DAD62100D7660098CC4F /* MainViewController.swift in Sources */,
+				7C75DAD82100D78B0098CC4F /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75GX2CG9NV;
 				INFOPLIST_FILE = BlockNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75GX2CG9NV;
 				INFOPLIST_FILE = BlockNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
