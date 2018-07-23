@@ -9,7 +9,6 @@
 import UIKit
 
 class BlockNotesTableViewCell: UITableViewCell {
-    
     @IBOutlet weak var lblId: UILabel!
     @IBOutlet weak var lblText: UILabel!
     
@@ -34,4 +33,5 @@ class BlockNotesTableViewCell: UITableViewCell {
         lblId.text = "\(id)"
         lblText.text = text
     }
+    
 }

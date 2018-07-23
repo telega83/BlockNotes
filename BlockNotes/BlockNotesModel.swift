@@ -9,8 +9,11 @@
 import Foundation
 
 class BlockNotesModel {
-    
     private var _notes = [Note]()
+    
+    init() {
+        
+    }
     
     init(notes: [Note]) {
         _notes = notes

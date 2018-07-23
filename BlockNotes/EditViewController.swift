@@ -16,7 +16,6 @@ class EditViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var btnRefresh: UIButton!
     @IBOutlet weak var actIndicator: UIActivityIndicatorView!
     
-    
     var model: BlockNotesModel!
     var id: Int = 0
     var initialText: String = ""

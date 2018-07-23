@@ -10,27 +10,36 @@ import XCTest
 @testable import BlockNotes
 
 class BlockNotesTests: XCTestCase {
+    var testModel: BlockNotesModel!
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        testModel = BlockNotesModel()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        testModel = nil
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    //One note has been received
+    func testNoteAddedFromJSON() {
+        let json = "{\n  \"id\": 1, \"title\": \"Jogging in park\"\n}".data(using: .utf8)!
+        _ = testModel.addNote(json: json)
+        XCTAssert(testModel.getNoteCount() == 1, "Notes created: \(testModel.getNoteCount()), expected: 1")
+        XCTAssert(testModel.getNote(index: 0)?.id == 1, "note[0].id = \(String(describing: testModel.getNote(index: 0)?.id)), expected: 1")
+        XCTAssert(testModel.getNote(index: 0)?.text == "Jogging in park", "note[0].text = \(String(describing: testModel.getNote(index: 0)?.text)), expected: Jogging in park")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    //Array of notes has been received
+    func testNotesAddedFromJSON() {
+        let json = "[{\n  \"id\": 1, \"title\": \"Jogging in park\"\n}, {\n  \"id\": 2, \"title\": \"Pick-up posters from post-office\"\n}]".data(using: .utf8)!
+        _ = testModel.addNote(json: json)
+        XCTAssert(testModel.getNoteCount() == 2, "Notes created: \(testModel.getNoteCount()), expected: 2")
+        XCTAssert(testModel.getNote(index: 0)?.id == 1, "note[0].id = \(String(describing: testModel.getNote(index: 0)?.id)), expected: 1")
+        XCTAssert(testModel.getNote(index: 0)?.text == "Jogging in park", "note[0].text = \(String(describing: testModel.getNote(index: 0)?.text)), expected: Jogging in park")
+        XCTAssert(testModel.getNote(index: 1)?.id == 2, "note[0].id = \(String(describing: testModel.getNote(index: 1)?.id)), expected: 2")
+        XCTAssert(testModel.getNote(index: 1)?.text == "Pick-up posters from post-office", "note[0].text = \(String(describing: testModel.getNote(index: 1)?.text)), expected: Pick-up posters from post-office")
     }
-    
+
 }
