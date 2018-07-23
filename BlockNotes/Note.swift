@@ -45,15 +45,4 @@ class Note: Codable {
         _date = Date()
     }
     
-    /*
-    func getLocalTime() -> String {
-        let components = Calendar.current.dateComponents([.hour, .minute, .second], from: _date!)
-        return String(format: "%02d:%02d:%02d", components.hour!, components.minute!, components.second!)
-    }
-    
-    func getLocalDate() -> String {
-        let components = Calendar.current.dateComponents([.day, .month, .year], from: _date!)
-        return "\(components.day!).\(components.month!).\(components.year!)"
-    }
- */
 }

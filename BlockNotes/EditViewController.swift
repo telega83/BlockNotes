@@ -28,7 +28,7 @@ class EditViewController: UIViewController, UITextViewDelegate {
         actIndicator.isHidden = true
         
         if let note = model.getNote(id: id) {
-            lblId.text = "Note \(note.id)"
+            lblId.text = NSLocalizedString("Note", comment: "") + " \(note.id)"
             txtNote.text = note.text
             initialText = note.text
         }

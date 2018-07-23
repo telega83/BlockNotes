@@ -68,9 +68,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func confirmDelete(id: Int) {
-        let alert = UIAlertController(title: "Delete note", message: "Are you sure you want to delete", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: NSLocalizedString("Delete note", comment: ""), message: NSLocalizedString("Are you sure?", comment: ""), preferredStyle: .actionSheet)
         
-        let DeleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: { (Action) -> Void in
+        let DeleteAction = UIAlertAction(title: NSLocalizedString("Delete", comment: ""), style: .destructive, handler: { (Action) -> Void in
             self.toggleUI(switchOn: false)
             BlockNotesNetworking().sendDeleteRequest(id: id) { response, data in
                 if let response = response as? HTTPURLResponse {
@@ -82,7 +82,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                         }
                     } else {
                         DispatchQueue.main.async {
-                            let alert = UIAlertController(title: "Network error", message: "Response code: \(response.statusCode)", preferredStyle: .alert)
+                            let alert = UIAlertController(title: NSLocalizedString("Network error", comment: ""), message: NSLocalizedString("Response code:", comment: "") + " \(response.statusCode)", preferredStyle: .alert)
                             let okAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
                             alert.addAction(okAction)
                             self.present(alert, animated: true, completion: nil)
@@ -92,7 +92,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
             }
         })
-        let CancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { (Action) -> Void in })
+        let CancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: { (Action) -> Void in })
         
         alert.addAction(DeleteAction)
         alert.addAction(CancelAction)
@@ -137,7 +137,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                     }
                 } else {
                     DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "Network error", message: "Response code: \(response.statusCode)", preferredStyle: .alert)
+                        let alert = UIAlertController(title: NSLocalizedString("Network error", comment: ""), message: NSLocalizedString("Response code:", comment: "") + " \(response.statusCode)", preferredStyle: .alert)
                         let okAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in }
                         alert.addAction(okAction)
                         self.present(alert, animated: true, completion: nil)

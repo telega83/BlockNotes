@@ -81,4 +81,5 @@ class BlockNotesModel {
     func getNoteCount() -> Int {
         return _notes.count
     }
+    
 }

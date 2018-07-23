@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  BlockNotes
+
+  Created by Oleg on 23/07/2018.
+  Copyright © 2018 telega. All rights reserved.
+*/
+
+"Note" = "Note";
+"Delete note" = "Delete note";
+"Are you sure?" = "Are you sure?";
+"Delete" = "Delete";
+"Cancel" = "Cancel";
+"Network error" = "Network error";
+"Response code:" = "Response code:";

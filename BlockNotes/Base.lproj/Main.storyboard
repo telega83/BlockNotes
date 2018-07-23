@@ -32,13 +32,25 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Y5V-vC-jx8">
                                 <rect key="frame" x="178" y="324" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf9-ch-UOh">
+                                <rect key="frame" x="91" y="462" width="193" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="H5T-Ht-NSl"/>
+                                    <constraint firstAttribute="width" constant="193" id="zrB-mP-slu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                <color key="textColor" red="0.95298641920089722" green="0.64500713348388672" blue="0.20006796717643738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="h49-Fv-9MY" firstAttribute="centerY" secondItem="j9Y-Og-5Hc" secondAttribute="centerY" id="6rH-6K-hnl"/>
+                            <constraint firstItem="bf9-ch-UOh" firstAttribute="centerX" secondItem="j9Y-Og-5Hc" secondAttribute="centerX" id="gya-Hj-YGw"/>
                             <constraint firstItem="Y5V-vC-jx8" firstAttribute="centerX" secondItem="j9Y-Og-5Hc" secondAttribute="centerX" id="hwi-nd-QLK"/>
                             <constraint firstItem="Y5V-vC-jx8" firstAttribute="centerY" secondItem="j9Y-Og-5Hc" secondAttribute="centerY" id="sxT-d4-N81"/>
                             <constraint firstItem="h49-Fv-9MY" firstAttribute="centerX" secondItem="j9Y-Og-5Hc" secondAttribute="centerX" id="u6l-Fr-HX3"/>
+                            <constraint firstItem="bf9-ch-UOh" firstAttribute="top" secondItem="h49-Fv-9MY" secondAttribute="bottom" constant="8" id="y4p-N8-BYV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UMj-T2-8dJ"/>
                     </view>
@@ -284,6 +296,7 @@
         <image name="start_icon" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="4Rv-r4-MMe"/>
         <segue reference="6UX-Ts-sc3"/>
     </inferredMetricsTieBreakers>
 </document>
