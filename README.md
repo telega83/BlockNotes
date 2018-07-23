@@ -12,4 +12,5 @@ To see how localizations works please do folowing: Click **Product -> Scheme -> 
 ## Description
 While application starts it gets array of notes from the server (**GET /notes** method).
 Main view with a list of avaiable notes has **Refresh** button (**GET /notes** method as well) and **Add** button (which calls **POST /notes** method). 
-Swiping a cell from right to left gives access to **Delete** button corresponding note (which calls **DELETE /notes/{id}** after user confirmation).
+Swiping a cell from right to left gives access to **Delete** button for corresponding note (which calls **DELETE /notes/{id}** after user confirmation).
+Tapping a cell will open an edit view of corresponding note. Edit view allows to refresh note's text (**GET /notes/{id}** method) and to save text chages if they have reay took place (**PUT /notes/{id}**).
