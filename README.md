@@ -1,7 +1,7 @@
 # Test iOS application for management of personal notes
 
 ## Instructions
-###Clone repository
+### Clone repository
 ```
 git clone git@github.com:telega83/BlockNotes.git
 ```
